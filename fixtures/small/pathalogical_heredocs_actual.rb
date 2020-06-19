@@ -18,6 +18,16 @@ def foo
   puts c
 end
 
+d = {
+  msg: <<~EOD,
+    heredoc msg
+  EOD
+  opts: {
+    foo: 'bar'
+  }
+}
+
 puts a
 puts b
 foo
+puts d
